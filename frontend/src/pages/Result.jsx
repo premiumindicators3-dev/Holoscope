@@ -13,7 +13,7 @@ const Result = () => {
 const handlePayment = async (amount) => {
     try {
     // Step 1: create order from backend
-    const res = await fetch("http://localhost:5000/create-order", {
+    const res = await fetch("https://holoscope-x61p.onrender.com/create-order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const handlePayment = async (amount) => {
 
     // Step 2: open Razorpay
     const options = {
-      key: "rzp_test_ScTR7ite04rjsr",
+      key: import.meta.env.VITE_RAZORPAY_KEY,
       amount: order.amount,
       currency: "INR",
       name: "Horoscope",
