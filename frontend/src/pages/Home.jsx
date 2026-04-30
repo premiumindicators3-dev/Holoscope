@@ -14,13 +14,13 @@ const Home = () => {
     <div className="bg-black text-white min-h-screen font-sans">
 
       {/* LOGO */}
-      <div className="flex flex-col items-center py-8">
+    <div className="flex flex-col items-center py-8">
         <img
-          src="/logo.jpeg"
-          alt="logo"
-          className="w-44 md:w-60 rounded-full rotate-slow glow"
+          src="/webLogo.png"
+          alt="Horoscope Logo"
+          className="w-40 md:w-56 rounded-full shadow-2xl"
         />
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mt-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-yellow-400 mt-4 tracking-wide">
           Horoscope
         </h1>
       </div>
